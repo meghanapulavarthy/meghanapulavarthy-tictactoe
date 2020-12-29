@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+    <link rel="stylesheet" href="index.css"/>
+  </head>
+  <body class="alignment"> 
+      <div class="neon">
+          <span class="text" data-text="TIC TAC TOE">TIC TAC TOE</span>
+          <span class="gradient"></span>
+          <span class="spotlight"></span>
+      </div>
+  
+    <p>player 1 name:</p>
+    <input type="text" id="p1" name="p1"/>
+  <br/>
+  <p> player 2 name:</p>
+    <input type="text" id="p2" name="p2"/>
+  <br/>
+
+  <label for="dimension"><p>Choose a dimension</p> </label>
+
+  <select name="dimension" id="dimension">
+    <option value = "3" >3*3</option>
+    <option value = "4" >4*4</option>
+    <option value = "5" >5*5</option>
+    <option value = "6" >6*6</option>
+    <option value = "7" >7*7</option>
+    <option value = "8" >8*8</option>
+  </select>
+
+  <br/>
+    <button id="gamestart" onclick="startGame()"> Start Game </button>
+
+    <div id="game-container" class="hide">
+      <div id="turn"></div>
+    </div>
+<br/>
+    <input type="reset" class="resetbtn" onclick="location.reload();"></input>
+    <script src="index.js"> </script>
+  </body>
+</html>
